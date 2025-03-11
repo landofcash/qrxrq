@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define CSS Variables */
+:root {
+    --color-background: oklch(1 0 0);
+    --color-foreground: oklch(0.145 0 0);
+    --color-border: oklch(0.922 0 0);
+}
+
+.dark {
+    --color-background: oklch(0.145 0 0);
+    --color-foreground: oklch(0.985 0 0);
+    --color-border: oklch(0.269 0 0);
+}
+
+/* Base Styling */
+@layer base {
+    * {
+        @apply border-[--color-border] outline-none;
+    }
+    body {
+        @apply bg-[--color-background] text-[--color-foreground] font-sans antialiased;
+    }
+    label {
+        font-weight: 600 !important;
+    }
+}
