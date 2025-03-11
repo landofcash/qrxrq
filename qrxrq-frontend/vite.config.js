@@ -4,9 +4,10 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  base: '/[PROJECT-GITHUB-PAGES-NAME]/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
-  },
+  }
 });
