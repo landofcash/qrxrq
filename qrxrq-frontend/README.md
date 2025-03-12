@@ -1,8 +1,8 @@
 # QRXRQ URL Shortener (Frontend)
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/your-repo/qrxrq-url-shortener)
-![GitHub Stars](https://img.shields.io/github/stars/your-repo/qrxrq-url-shortener?style=social)
-![GitHub License](https://img.shields.io/github/license/your-repo/qrxrq-url-shortener)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/landofcash/qrxrq)
+![GitHub Stars](https://img.shields.io/github/stars/landofcash/qrxrq?style=social)
+![GitHub License](https://img.shields.io/github/license/landofcash/qrxrq)
 
 ## Overview
 QRXRQ URL Shortener (Frontend) is a web application that provides a fast and efficient way to shorten URLs. Built with modern technologies, it ensures performance, scalability, and ease of use. The application allows users to generate short URLs using an incrementing ID approach while leveraging caching for optimized performance.
@@ -21,12 +21,6 @@ QRXRQ URL Shortener (Frontend) is a web application that provides a fast and eff
 ![Axios](https://img.shields.io/badge/axios.js-854195?style=for-the-badge&logo=axios&logoColor=5A29E4)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 
 ## Installation
