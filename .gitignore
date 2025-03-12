@@ -2,3 +2,6 @@
 /qrxrq-backend/coverage
 /qrxrq-backend/.idea
 /qrxrq-backend/node_modules
+/qrxrq-backend/.env
+/qrxrq-backend/.env.production
+/qrxrq-frontend/.env.production
