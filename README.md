@@ -2,6 +2,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/landofcash/qrxrq)
 ![GitHub issues](https://img.shields.io/github/issues/landofcash/qrxrq)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/landofcash/qrxrq)
+![GitHub Stars](https://img.shields.io/github/stars/landofcash/qrxrq?style=social)
 
 
 # 🚀 QRXRQ URL Shortener
