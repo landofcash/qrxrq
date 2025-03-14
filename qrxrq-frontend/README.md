@@ -1,9 +1,5 @@
 # QRXRQ URL Shortener (Frontend)
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/landofcash/qrxrq)
-![GitHub Stars](https://img.shields.io/github/stars/landofcash/qrxrq?style=social)
-![GitHub License](https://img.shields.io/github/license/landofcash/qrxrq)
-
 ## Overview
 QRXRQ URL Shortener (Frontend) is a web application that provides a fast and efficient way to shorten URLs. Built with modern technologies, it ensures performance, scalability, and ease of use. The application allows users to generate short URLs using an incrementing ID approach while leveraging caching for optimized performance.
 
