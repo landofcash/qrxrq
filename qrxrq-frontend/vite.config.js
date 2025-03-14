@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) =>  {
         plugins: [
             react(),
             createHtmlPlugin({
-                minify: true, // Minify HTML for better performance
+                minify: true,
                 inject: {
                     data: {
                         VITE_API_BASE_URL_PLACEHOLDER: env.VITE_API_BASE_URL,
