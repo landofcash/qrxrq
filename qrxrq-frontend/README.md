@@ -14,6 +14,7 @@ QRXRQ URL Shortener (Frontend) is a web application that provides a fast and eff
 ## Technologies Used
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![ShadCN UI](https://img.shields.io/badge/shadcn%2Fui-%23000000.svg?style=for-the-badge&logo=shadcnui&logoColor=white)
 ![Axios](https://img.shields.io/badge/axios.js-854195?style=for-the-badge&logo=axios&logoColor=5A29E4)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
@@ -24,12 +25,14 @@ QRXRQ URL Shortener (Frontend) is a web application that provides a fast and eff
 - Node.js (Latest LTS version recommended)
 - MongoDB
 - Redis
+- QRXRQ Server Side (check /qrxrq-backend folder)
 
 ### Steps
-1. Clone the repository:
+1. Clone the repository (if not yet. backend and frontend share the same repo):
    ```sh
-   git clone https://github.com/your-repo/qrxrq-url-shortener.git
-   cd qrxrq-url-shortener
+   git clone https://github.com/landofcash/qrxrq.git
+   
+   cd qrxrq-frontend
    ```
 2. Install dependencies:
    ```sh

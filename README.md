@@ -25,7 +25,7 @@ Check out the live demo: [qrxrq.com](https://qrxrq.com)
 - React.js with Vite 
 - Tailwind CSS v4
 - Vue Router (for routing)
-- Headless UI (for UI components)
+- ShadCN UI (for UI components)
 - **Hosted on GitHub Pages**
 
 ### Backend
