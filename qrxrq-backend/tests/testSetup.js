@@ -11,7 +11,7 @@ const { connectRedis, redisClient } = require("../config/redis");
 
 const app = express();
 app.use(express.json());
-app.use("/api/url", routes);
+app.use("", routes);
 
 let mongoServer;
 

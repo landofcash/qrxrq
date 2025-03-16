@@ -1,5 +1,5 @@
 const Url = require("../models/Url");
-const { getNextId } = require("../utils/idGenerator");
+const { generateShortId } = require("../utils/idGenerator");
 
 const shortenUrl = async (req, res) => {
     const { originalUrl } = req.body;
@@ -7,10 +7,10 @@ const shortenUrl = async (req, res) => {
     if (!originalUrl) return res.status(400).json({ error: "URL is required" });
 
     try {
-        let url = await Url.findOne({ originalUrl });
+        let url = await Url.findOne({ originalUrl: originalUrl.trim() });
         if (url) return res.json({ shortUrl: `${process.env.DOMAIN}/${url.shortId}` });
 
-        const shortId = await getNextId();
+        const shortId = generateShortId();
         url = new Url({ originalUrl, shortId });
         await url.save();
 

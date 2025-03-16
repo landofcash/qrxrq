@@ -7,12 +7,12 @@ describe("Redirect URL API", () => {
         // Insert test data
         const url = new Url({
             originalUrl: "https://example.com",
-            shortId: "1234"
+            shortId: "12B4"
         });
         await url.save();
 
         await request(app)
-            .get("/1234")
+            .get("/12B4")
             .expect(302)
             .expect("Location", "https://example.com");
     });
