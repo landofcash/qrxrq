@@ -1,5 +1,5 @@
 const Url = require("../models/Url");
-const { redisClient } = require("../config/redis");
+const cache = require("../services/cacheFactory");
 
 // Redirect to original URL and track stats
 const redirectUrl = async (req, res) => {
@@ -7,22 +7,28 @@ const redirectUrl = async (req, res) => {
     const { shortId } = req.params;
 
     try {
-        let originalUrl = await redisClient.get(shortId);
+        let originalUrl = await cache.get(shortId);
+
         if (!originalUrl) {
             const url = await Url.findOne({ shortId });
             if (!url) return res.status(404).json({ error: "Not found" });
-
-            url.redirectCount = (url.redirectCount || 0) + 1;
-            url.referrerStats = url.referrerStats || {};
-            url.referrerStats[referrer] = (url.referrerStats[referrer] || 0) + 1;
-            await url.save();
-
             originalUrl = url.originalUrl;
-            await redisClient.set(shortId, originalUrl, "EX", 86400);
+            await cache.set(shortId, originalUrl, { EX: 86400 });
         }
+
+        await Url.updateOne(
+            { shortId },
+            {
+                $inc: {
+                    redirectCount: 1,
+                    [`referrerStats.${referrer}`]: 1
+                }
+            }
+        );
 
         res.redirect(originalUrl);
     } catch (err) {
+        console.error("Redirect Error:", err);
         res.status(500).json({ error: "Server error" });
     }
 };

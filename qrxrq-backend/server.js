@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-const { connectRedis } = require("./config/redis");
 const routes = require("./routes/routes");
+const cache = require("./services/cacheFactory");
 
 dotenv.config();
 const app = express();
@@ -16,8 +16,7 @@ app.use(cors());
 (async () => {
     try {
         await connectDB();
-        await connectRedis();
-
+        await cache.init();
         app.listen(PORT, () => {
             console.log(`Server running on port ${PORT}`);
         });
