@@ -7,7 +7,7 @@ const ContactUsForm = () => {
                 <li>
                     <div className="flex items-center space-x-2">
                         <img
-                            src="https://www.upwork.com/favicon.ico"
+                            src="upwork-favicon.ico"
                             alt="Upwork"
                             className="w-4 h-4"
                         />
@@ -23,7 +23,7 @@ const ContactUsForm = () => {
                 <li>
                     <div className="flex items-center space-x-2">
                         <img
-                            src="https://github.com/favicon.ico"
+                            src="github-favicon.ico"
                             alt="GitHub"
                             className="w-4 h-4"
                         />
