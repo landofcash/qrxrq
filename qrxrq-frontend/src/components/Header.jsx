@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <header className="w-full flex flex-col items-center text-center">
             <h1 className="text-2xl font-bold dark:text-white">QRXRQ</h1>
-            <h2 className="text-lg text-gray-600 dark:text-gray-300 font-mono">URL SHORTENER</h2>
+            <h2 className="text-lg text-gray-600 dark:text-gray-300 font-mono">LINK SHORTENER</h2>
             <nav>
                 <ul className="flex gap-4 text-blue-800 dark:text-blue-200 underline font-mono">
                     <li>

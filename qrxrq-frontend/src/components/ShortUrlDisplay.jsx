@@ -16,7 +16,7 @@ const ShortUrlDisplay = ({ shortUrl }) => {
 
     return (
         <div className="w-full flex flex-col items-center gap-3 text-center">
-            <p className="text-[var(--color-foreground)] text-sm">Your shortened URL:</p>
+            <p className="text-[var(--color-foreground)] text-sm">Your shortened link:</p>
             <div className="bg-[var(--color-background)] border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-md w-full break-all">
                 {shortUrl}
             </div>

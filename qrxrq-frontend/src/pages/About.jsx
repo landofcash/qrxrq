@@ -5,7 +5,7 @@ const About = () => {
         <div className="flex flex-col items-center justify-center text-xs text-[var(--color-foreground)]">
             <div className="w-full max-w-md max-h-80 overflow-y-auto">
                 <p className="mb-4 text-sm">
-                    QRXRQ is a modern, fast, and secure URL shortener designed to simplify link management. Open source.
+                    QRXRQ is a modern, fast, and secure URL shortener designed to simplify link management. <a className="text-blue-500 dark:text-blue-200 font-bold hover:underline" href="https://https://github.com/landofcash/qrxrq"  title="QRXRQ github repo">Open source on Github</a>.
                 </p>
                 <h2 className="text-sm font-semibold mb-2">🛠 Technologies Used</h2>
                 <div className="flex flex-wrap gap-2 mb-2">

@@ -12,7 +12,7 @@ const ShortenForm = ({ setShortUrl }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!url) {
-            setError("Please enter a valid URL");
+            setError("Please enter a valid link.");
             return;
         }
         setError("");
@@ -21,7 +21,7 @@ const ShortenForm = ({ setShortUrl }) => {
             const response = await api.post("/shorten", {originalUrl: url});
             setShortUrl(response.data.shortUrl);
         } catch (error) {
-            setError(`Error shortening URL: ${error}`);
+            setError(`Error shortening link: ${error}`);
         } finally {
             setLoading(false);
         }
@@ -40,7 +40,7 @@ const ShortenForm = ({ setShortUrl }) => {
 
             <form onSubmit={handleSubmit} className={`flex flex-col gap-2 ${loading ? "pointer-events-none" : ""}`}>
                 <Label htmlFor="urlInput" className="text-(--color-foreground)  font-medium">
-                    Enter URL to Shorten
+                    Enter Link to Shorten
                 </Label>
                 <Textarea
                     id="urlInput"
@@ -52,7 +52,7 @@ const ShortenForm = ({ setShortUrl }) => {
                 />
                 {error && <p className="text-red-500 text-sm">{error}</p>}
                 <Button type="submit" className="w-full hover:cursor-pointer">
-                    Shorten URL
+                    Shorten Link
                 </Button>
             </form>
         </div>
