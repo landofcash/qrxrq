@@ -9,7 +9,7 @@
 
 QRXRQ is an **URL shortening service** that allows users to shorten and manage links efficiently. It features a **React frontend** with **Tailwind CSS** and a **Node.js backend** with **MongoDB** and **Redis** for performance optimization.
 
-## 🌐 Click To Try It 👀
+## [🌐 Click To Try It 👀](https://qrxrq.com)
 Check out the live demo: [qrxrq.com](https://qrxrq.com)
 
 ## 🌟 Features
